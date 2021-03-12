@@ -22,7 +22,7 @@ namespace Task1
             sourcePhoneBook.Add(new Contact("Анатолий", 79990000011, "anatoly@example.com",50));
             sourcePhoneBook.Add(new Contact("Валерий", 79990000012, "valera@example.com", 24));
             sourcePhoneBook.Add(new Contact("Сергей", 799900000013, "serg@example.com",25));
-            sourcePhoneBook.Add(new Contact("Иннокентий", 799900000013, "innokentii@example.com",44));
+            sourcePhoneBook.Add(new Contact("Иннокентий", 79990000014, "innokentii@example.com",44));
 
             var phoneBook = sourcePhoneBook.OrderBy(x => x.Name).ThenBy(x => x.Age);
             while (true)
@@ -49,7 +49,7 @@ namespace Task1
 
                     // выводим результат
                     foreach (var entry in pageContent)
-                        Console.WriteLine($"{entry.Name} : {entry.PhoneNumber}\t {entry.Age}" );
+                        Console.WriteLine($"{entry.Name} : \t{entry.PhoneNumber}\t {entry.Age}" );
 
                     Console.WriteLine();
                 }
